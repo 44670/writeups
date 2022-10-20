@@ -16,7 +16,7 @@ The contents of the spam mails are not useful, there's a "X-AES-CBC-Slice" heade
 
 We know that in the CBC mode, the plain text is XORed with the previous cipher text before the encryption. So for one block, we can just decrypt it with the key and previous cipher text we guessed, instead of starting with the IV and all the previous blocks.
 
-I have written a CUDA-based GPU solver to enumerate all the possible "previous cipher text" and key, trying to find patterns of the plaintext. It turns out that the key is always the same slice, and the plaintext a base64-encoded image. 
+I have written a CUDA-based GPU solver to enumerate all the possible "previous cipher text" and key, trying to find patterns of the plaintext. It turns out that the key is always the same slice, and the plaintext is a base64-encoded image. 
 
 You don't have to write the CUDA code if you already have such knowledge, a cpu-based solver is enough after that.
 
