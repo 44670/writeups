@@ -12,7 +12,7 @@ The flag will be read for only once at the ending, so an audio recorder may be n
 
 # EP001 Bonus
 
-The contents of the spam mails are not useful, there's a "X-AES-CBC-Slice" header in each mail, one of them is the AES key, one of them is the IV, and the others are ciphertext. The order is randomized and we have to recovery it by ourselves.
+The contents of the spam mails are not useful, there's a "X-AES-CBC-Slice" header in each mail, one of them is the AES key, one of them is the IV, and the others are ciphertext. The order is randomized and we have to recover it by ourselves.
 
 We know that in the CBC mode, the plain text is XORed with the previous cipher text before the encryption. So for one block, we can just decrypt it with the key and previous cipher text we guessed, instead of starting with the IV and all the previous blocks.
 
