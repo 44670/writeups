@@ -2,7 +2,6 @@
 
 Website: http://h4ck1ng.google/
 
-Official Discord: https://discord.gg/xKvEKkW4KZ
 
 # EP000 Bonus
 
