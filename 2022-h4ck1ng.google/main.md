@@ -1,7 +1,6 @@
 # h4ck1ng.google writeup: main challenges
 Website: http://h4ck1ng.google/
 
-Official Discord: https://discord.gg/xKvEKkW4KZ
 
 # EP000
 We don't need any special tools to solve this episode. Chrome's developer tools are enough.
